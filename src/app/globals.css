@@ -1,26 +1,91 @@
-@import "tailwindcss";
+@import 'tailwindcss';
 
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
+  --skin-color: #10b981
+;
+  --mirage-color: #1f2a44;
+  --scroll-box-color: hsl(242, 12%, 38%);
+  --scroll-thumb-color: hsl(242, 12%, 26%);
 }
 
-@theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
+::-webkit-scrollbar {
+  width: 0.6rem;
+  background-color: var(--scroll-box-color);
+  border-radius: 0.5rem;
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
+::-webkit-scrollbar-thumb {
+  background-color: var(--scroll-thumb-color);
+  border-radius: 0.5rem;
 }
 
-body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+.button {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  background-color: #10b981
+;
+  color: #fff;
+  padding: 0.5rem 1rem;
+  border-radius: 0.125rem;
+  font-weight: 500;
+  position: relative;
+  z-index: 10;
+  transition: all 0.3s;
+}
+
+.button::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background-color: #1f2a44;
+  border-radius: 0.125rem;
+  z-index: -1;
+  transform: scale(0);
+  transform-origin: center;
+  transition: transform 0.3s;
+}
+
+.button:hover::after {
+  transform: scale(1);
+}
+
+.section {
+  padding-top: 4rem;
+  padding-bottom: 4rem;
+}
+
+.section-title {
+  text-align: center;
+  font-size: 1.875rem;
+  font-weight: 700;
+  color: hsl(242, 8%, 85%);
+  margin-bottom: 3rem;
+}
+
+.section-title::before {
+  display: block;
+  font-size: 1rem;
+  font-weight: 500;
+  color: #10b981;
+  margin-bottom: 0.5rem;
+  content: attr(data-heading);
+}
+
+/* Add to your global CSS file */
+.active-link {
+  color: #10b981 !important; /* green-500 - same as hover */
+}
+
+.active-link span {
+  opacity: 1 !important;
+}
+
+/* Add this to your global CSS file (globals.css or similar) */
+.nav-link.active-link {
+  color: #10b981 !important; /* green-500 - same as hover */
+}
+
+.nav-link.active-link span {
+  opacity: 1 !important;
 }
