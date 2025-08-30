@@ -91,8 +91,8 @@ export default function HomeSection() {
         </div>
 
      {/* Contact Info - Bottom */}
-<div className="my-info flex justify-center mt-8 sm:mt-12 px-4 sm:px-0">
-  <div className="flex flex-col items-start gap-4 sm:flex-row sm:items-center sm:gap-7">
+<div className="my-info flex sm:justify-left  mt-8 sm:mt-12 px-4 sm:px-0">
+  <div className="flex flex-col m-auto sm:m-0 gap-4 sm:flex-row sm:items-left sm:gap-7">
     {[
       { icon: MessageCircle, title: 'Messenger', subtitle: 'Etinosa Esezobor' },
       { icon: Phone, title: 'Whatsapp', subtitle: '+234 703 3303 551' },

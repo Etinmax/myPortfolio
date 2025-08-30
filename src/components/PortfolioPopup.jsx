@@ -1,13 +1,19 @@
-import { Link } from "lucide-react";
+import { Link,X } from "lucide-react";
 
 export default function PortfolioPopup({ item, closePopup }) {
   return (
     <div className="portfolio-popup fixed inset-0 bg-black/50 flex items-center justify-center p-4 z-[100] opacity-100 visible">
       <div className="portfolio-popup-inner bg-gray-800 w-full max-w-3xl rounded-lg p-8 relative">
         <div className="portfolio-popup-content grid md:grid-cols-2 gap-8 items-center">
-          <span className="portfolio-popup-close absolute top-6 right-6 text-pink-500 text-xl cursor-pointer" onClick={closePopup}>
+          {/*<span className="portfolio-popup-close absolute top-6 right-6 text-pink-500 text-xl cursor-pointer" onClick={closePopup}>
             <i className="uil uil-times"></i>
-          </span>
+          </span>*/}
+          <span 
+  className="portfolio-popup-close absolute top-6 right-6 text-green-500 text-xl cursor-pointer" 
+  onClick={closePopup}
+>
+  <X size={24} />
+</span>
           <div className="pp-thumbnail">
             <img src={item.img} alt="" className="portfolio-popup-img rounded-lg" />
           </div>

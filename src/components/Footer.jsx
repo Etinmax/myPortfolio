@@ -92,10 +92,11 @@ export default function Footer() {
 
               <div className="flex flex-wrap justify-center md:justify-end gap-4">
                 {[
-                  { icon: Facebook, href: "https://www.facebook.com", label: "Facebook" },
-                  { icon: Instagram, href: "https://www.instagram.com", label: "Instagram" },
-                  { icon: Twitter, href: "https://www.x.com", label: "Twitter" },
-                  { icon: Github, href: "https://github.com/yourusername", label: "Github" },
+                  { icon: Facebook, href: "https://www.facebook.com/etinosa.esezobor.3", label: "Facebook" },
+                  { icon: Instagram, href: "https://www.instagram.com/official_etinosa/", label: "Instagram" },
+                  { icon: Twitter, href: "https://www.x.com/EtinosaMaxville", label: "Twitter" },
+                  { icon: Github, href: "https://github.com/etinmax", label: "Github" },
+
                 ].map(({ icon: Icon, href, label }) => (
                   <a
                     key={label}

@@ -16,7 +16,7 @@ export default function WorkSection({ setPortfolioItem }) {
       subtitle: 'Modern Corporate Website',
       details: {
         title: 'The services we provide for design',
-        description: 'Two smartphones displaying a sleek, dark-themed dashboard interface',
+        description: 'A corporate website design project showcasing modern aesthetics and user-friendly interfaces.',
         info: [
           { label: 'Created', value: '22 Apr 2025' },
           { label: 'Technologies', value: 'React, Next.js, Tailwind' },
@@ -29,15 +29,15 @@ export default function WorkSection({ setPortfolioItem }) {
       id: 2,
       category: 'app',
       img: '/mockup/storage.png',
-      title: 'Food Delivery App',
-      subtitle: 'Mobile App Interface',
+      title: 'Cloud Storage App',
+      subtitle: 'Web App Interface',
       details: {
-        title: 'Mobile App Landing Design & App Maintain',
-        description: 'A stylish burger restaurant mobile app interface displayed on two smartphones',
+        title: 'Web App  Design & App Maintain',
+        description: 'A stylish cloud storage web app interface displayed on a PC',
         info: [
-          { label: 'Created', value: '15 Apr 2025' },
-          { label: 'Technologies', value: 'React Native, Node.js' },
-          { label: 'Role', value: 'Full Stack Developer' },
+          { label: 'Created', value: '15 Apr 2024' },
+          { label: 'Technologies', value: 'React Native, Python, HTML, CSS' },
+          { label: 'Role', value: 'Frontend Developer' },
           { label: 'View', value: 'www.domain.com', href: '#' },
         ],
       },
@@ -63,15 +63,15 @@ export default function WorkSection({ setPortfolioItem }) {
       id: 4,
       category: 'app',
       img: '/mockup/biz.png',
-      title: 'Fitness App',
-      subtitle: 'Workout Tracking App',
+      title: 'Task Management App',
+      subtitle: 'Task Tracking App',
       details: {
-        title: 'Mobile App Landing Design & Services',
-        description: 'Modern workout website interface design featuring a bold and energetic visual layout',
+        title: 'Web App Landing Design & Services',
+        description: 'Modern task management website interface design featuring a bold and energetic visual layout',
         info: [
           { label: 'Created', value: '4 Apr 2025' },
-          { label: 'Technologies', value: 'Flutter, Firebase' },
-          { label: 'Role', value: 'Mobile Developer' },
+          { label: 'Technologies', value: 'React, Firebase' },
+          { label: 'Role', value: 'Frontend Developer' },
           { label: 'View', value: 'www.domain.com', href: '#' },
         ],
       },
@@ -80,15 +80,15 @@ export default function WorkSection({ setPortfolioItem }) {
       id: 5,
       category: 'web',
       img: '/mockup/biz.png',
-      title: 'Gaming Platform',
+      title: 'Hotel Management App',
       subtitle: 'Web Application',
       details: {
         title: 'Design for Technology & Services',
-        description: 'An app design that is clean, functional, and ideal for gamers looking to manage their digital assets and purchases',
+        description: 'An app design that is clean, functional, and ideal for users looking to manage their hotel bookings and services',
         info: [
           { label: 'Created', value: '28 Mar 2025' },
-          { label: 'Technologies', value: 'Vue.js, Express.js' },
-          { label: 'Role', value: 'Frontend Developer' },
+          { label: 'Technologies', value: 'Next.js, Express.js' },
+          { label: 'Role', value: 'Fullstack Developer' },
           { label: 'View', value: 'www.domain.com', href: '#' },
         ],
       },
@@ -97,15 +97,15 @@ export default function WorkSection({ setPortfolioItem }) {
       id: 6,
       category: 'design',
       img: '/mockup/storage.png',
-      title: 'Food Ordering App',
-      subtitle: 'UI/UX Design',
+      title: 'Students Attendance App',
+      subtitle: 'Web App Design',
       details: {
         title: 'App for Technology & Services',
-        description: 'An app design that is clean and modern, making food browsing and ordering easy',
+        description: 'An app design that is clean and modern, making attendance tracking easy',
         info: [
           { label: 'Created', value: '20 Mar 2025' },
-          { label: 'Technologies', value: 'Figma, Sketch' },
-          { label: 'Role', value: 'UI/UX Designer' },
+          { label: 'Technologies', value: 'Nextjs, Expressjs' },
+          { label: 'Role', value: 'Full Stack Developer' },
           { label: 'View', value: 'www.domain.com', href: '#' },
         ],
       },
@@ -199,7 +199,7 @@ export default function WorkSection({ setPortfolioItem }) {
 
                 {/* Action Button */}
                 <button
-                  className="work-button flex items-center gap-2 text-green-500 font-medium group-hover:text-green-400 transition-colors duration-300"
+                  className="work-button flex items-center gap-2 text-green-500 font-medium cursor-pointer group-hover:text-green-400 transition-colors duration-300"
                   onClick={() => setPortfolioItem(item)}
                 >
                   <span>View Details</span>
