@@ -386,9 +386,12 @@ const TestimonialCard = ({ testimonial }) => (
     </div>
     
     {/* Card body */}
-    <p className='text-gray-300 text-sm leading-relaxed'>
+    <p className="text-gray-300 text-sm leading-relaxed">
+  &quot;{testimonial.text}&quot;
+</p>
+    {/*<p className='text-gray-300 text-sm leading-relaxed'>
       "{testimonial.text}"
-    </p>
+    </p>*/}
     
     {/* Star rating */}
     <div className="flex mt-4 text-yellow-400">
