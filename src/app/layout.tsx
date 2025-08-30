@@ -1,5 +1,6 @@
 import '../app/globals.css';
 import type { Metadata } from "next";
+import { ReactNode } from 'react';
 
 export const metadata: Metadata = {
   title: "Etinosa Maxwell | Fullstack Developer & IT Specialist",
@@ -54,16 +55,17 @@ export const metadata: Metadata = {
   },
 };
 
-
-export default function RootLayout({ children }) {
+export default function RootLayout({
+  children,
+}: {
+  children: ReactNode;
+}) {
   return (
     <html lang="en" suppressHydrationWarning>
       <head>
         <title>Etinosa - Founder and Full Stack Developer </title>
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <meta charSet="UTF-8" />
-
-        
       </head>
       <body className="bg-black text-gray-200 font-poppins">{children}</body>
     </html>
