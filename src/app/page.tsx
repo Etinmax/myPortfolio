@@ -7,7 +7,6 @@ import QualificationSection from '../components/QualificationSection';
 import SkillsSection from '../components/SkillsSection';
 import WorkSection from '../components/WorkSection';
 import ServicesSection from '../components/ServicesSection';
-import TestimonialsSection from '../components/TestimonialsSection';
 import ContactSection from '../components/ContactSection';
 import Footer from '../components/Footer';
 import PortfolioPopup from '../components/PortfolioPopup';

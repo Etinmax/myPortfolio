@@ -386,7 +386,7 @@ const TestimonialCard = ({ testimonial }) => (
     </div>
     
     {/* Card body */}
-    <p className="text-gray-300 text-sm leading-relaxed">
+    <p className='text-gray-300 text-sm leading-relaxed'>
       "{testimonial.text}"
     </p>
     
