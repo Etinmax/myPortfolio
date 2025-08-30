@@ -362,7 +362,17 @@ const TestimonialsSection = () => {
 };
 
 // Separate TestimonialCard component for better organization
-const TestimonialCard = ({ testimonial }) => (
+// Define the testimonial type first
+interface Testimonial {
+  name: string;
+  username: string;
+  text: string;
+  image: string; 
+  // add any other properties your testimonial objects have
+}
+
+// Then use it in your component
+const TestimonialCard = ({ testimonial }: { testimonial: Testimonial }) => (
   <div className="bg-gradient-to-br from-gray-800 to-gray-900 rounded-2xl shadow-xl p-6 w-72 flex-shrink-0 border border-gray-700 hover:border-green-500 transition-all duration-300 hover:shadow-2xl hover:shadow-green-500/20">
     {/* Card header */}
     <div className="flex items-center space-x-4 mb-4">
