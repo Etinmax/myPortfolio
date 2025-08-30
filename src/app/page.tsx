@@ -19,7 +19,7 @@ import { Menu } from "lucide-react";
 export default function Home() {
   const [isSidebarOpen, setIsSidebarOpen] = useState(false);
   const [portfolioItem, setPortfolioItem] = useState(null);
-  const [activeModal, setActiveModal] = useState(null);
+const [activeModal, setActiveModal] = useState<number | null>(null);
 
   const toggleSidebar = () => {
     console.log('Toggling sidebar, current state:', isSidebarOpen);
@@ -27,7 +27,7 @@ export default function Home() {
   };
 
   const togglePortfolioPopup = (item = null) => setPortfolioItem(item);
-  const toggleServicesModal = (index) => setActiveModal(index);
+const toggleServicesModal = (index: number | null) => setActiveModal(index);
 
   return (
     <div className="relative min-h-screen">
