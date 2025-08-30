@@ -68,7 +68,7 @@ export default function TestimonialsSection() {
               <p className="testimonial-description text-sm text-justify mb-4">{testimonial.description}</p>
               <h3 className="testimonial-date text-base mb-4">{testimonial.date}</h3>
               <div className="testimonial-profile flex items-center gap-4">
-                <img src={testimonial.img} alt="" className="testimonial-profile-img w-16 h-16 rounded-full" />
+                <Image src={testimonial.img} alt="" className="testimonial-profile-img w-16 h-16 rounded-full" />
                 <div className="testimonial-profile-data">
                   <span className="testimonial-profile-name text-xl font-medium">{testimonial.name}</span>
                   <span className="testimonial-profile-detail text-sm block">{testimonial.detail}</span>

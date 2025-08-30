@@ -1,4 +1,5 @@
 import { Twitter, Instagram, Facebook, Github,User, MessageCircle, Phone, Mail } from 'lucide-react';
+import Image from 'next/image';
 
 export default function HomeSection() {
   return (
@@ -82,7 +83,7 @@ export default function HomeSection() {
 
           {/* Right Column - Image */}
           <div className="order-1 lg:order-2 flex justify-center lg:justify-end sm:hidden">
-            <img 
+            <Image
               src="/aipic.png" 
               alt="Maxwell" 
               className="home-img w-48 sm:w-56 lg:w-64 xl:w-60 max-w-full h-70"

@@ -2,6 +2,7 @@ import { Award, Briefcase, Headphones, Navigation, Download } from 'lucide-react
 import Link from 'next/link';
 import { useState, useEffect, useRef } from 'react';
 import DownloadCV from './DownloadCV';
+import Image from 'next/image'
 
 // Custom hook for intersection observer
 const useIntersectionObserver = (options = {}) => {
@@ -83,7 +84,7 @@ export default function AboutSection() {
           {/* Image Section */}
           <div className="relative">
             <div className="relative overflow-hidden rounded-2xl shadow-2xl transform hover:scale-105 transition-transform duration-500">
-              <img 
+              <Image 
                 src="/aipicbg.png" 
                 alt="Maxwell - Fullstack Developer" 
                 className="about-img w-full h-full object-cover rounded-2xl" 

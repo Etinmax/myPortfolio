@@ -2,6 +2,8 @@
 
 import { useEffect, useState } from 'react';
 import Link from 'next/link';
+import Image from 'next/image';
+
 
 export default function Sidebar({ isOpen, toggleSidebar }) {
   const [activeSection, setActiveSection] = useState('home');
@@ -104,7 +106,7 @@ export default function Sidebar({ isOpen, toggleSidebar }) {
         {/* Logo/Avatar - Desktop only */}
         <div className="absolute top-7 left-1/2 -translate-x-1/2 w-7 h-7 border-2 border-green-500 rounded-full hidden md:flex items-center justify-center shadow-lg">
           <Link href="#home" className="text-white font-bold text-lg">
-            <img src="/logo.png" alt="Logo" className="w-5 h-5 rounded-full object-cover" />
+            <Image src="/logo.png" alt="Logo" className="w-5 h-5 rounded-full object-cover" />
           </Link>
         </div>
 

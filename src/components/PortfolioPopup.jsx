@@ -1,4 +1,6 @@
 import { Link,X } from "lucide-react";
+import Image from 'next/image'
+
 
 export default function PortfolioPopup({ item, closePopup }) {
   return (
@@ -15,7 +17,7 @@ export default function PortfolioPopup({ item, closePopup }) {
   <X size={24} />
 </span>
           <div className="pp-thumbnail">
-            <img src={item.img} alt="" className="portfolio-popup-img rounded-lg" />
+            <Image src={item.img} alt="" className="portfolio-popup-img rounded-lg" />
           </div>
           <div className="portfolio-popup-info">
             <div className="portfolio-popup-subtitle text-sm mb-1">Featured - <span>{item.title}</span></div>
