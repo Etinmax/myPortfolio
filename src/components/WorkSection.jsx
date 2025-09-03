@@ -127,9 +127,9 @@ export default function WorkSection({ setPortfolioItem }) {
 
   const filters = [
     { key: 'all', label: 'All Projects' },
-    { key: 'web', label: 'Web Design' },
-    { key: 'app', label: 'Mobile Apps' },
-    { key: 'design', label: 'Brand Design' },
+    { key: 'web', label: 'Web Dev' },
+    { key: 'app', label: 'Technical' },
+    { key: 'design', label: 'Design' },
   ];
 
   return (
