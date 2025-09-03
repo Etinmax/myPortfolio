@@ -31,7 +31,7 @@ export const metadata: Metadata = {
     siteName: "Etinosa Maxwell Portfolio",
     images: [
       {
-        url: "https://yourportfolio.com/og-image.jpg", // replace with your OG image
+        url: "//etin.png", 
         width: 1200,
         height: 630,
         alt: "Etinosa Maxwell - Fullstack Developer Portfolio",
@@ -45,8 +45,8 @@ export const metadata: Metadata = {
     title: "Etinosa Maxwell | Fullstack Developer & IT Specialist",
     description:
       "Fullstack Developer from Nigeria with 10+ years of IT experience. Skilled in Next.js, React, Prisma, PostgreSQL, MongoDB, Git/GitHub, and IT Support.",
-    images: ["https://yourportfolio.com/og-image.jpg"], // replace
-    creator: "@yourhandle", // optional if you have Twitter/X
+    images: ["/etin.png"], 
+    creator: "@etinosamaxville", // optional if you have Twitter/X
   },
   icons: {
     icon: "/favicon.ico",
