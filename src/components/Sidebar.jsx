@@ -105,9 +105,19 @@ export default function Sidebar({ isOpen, toggleSidebar }) {
       <nav className="nav h-full relative">
         {/* Logo/Avatar - Desktop only */}
         <div className="absolute top-7 left-1/2 -translate-x-1/2 w-7 h-7 border-2 border-green-500 rounded-full hidden md:flex items-center justify-center shadow-lg">
-          <Link href="#home" className="text-white font-bold text-lg">
+          {/*<Link href="#home" className="text-white font-bold text-lg">
             <Image src="/logo.png" alt="Logo" className="w-5 h-5 rounded-full object-cover" />
-          </Link>
+          </Link>*/}
+          <Link href="#home" className="text-white font-bold text-lg">
+  <Image 
+    src="/logo.png" 
+    alt="Logo" 
+    width={20}  // w-5 = 20px in Tailwind
+    height={20} // h-5 = 20px in Tailwind
+    className="w-5 h-5 rounded-full object-cover" 
+  />
+</Link>
+          
         </div>
 
         {/* Close button - Mobile only */}

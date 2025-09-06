@@ -83,11 +83,18 @@ export default function HomeSection() {
 
           {/* Right Column - Image */}
           <div className="order-1 lg:order-2 flex justify-center lg:justify-end sm:hidden">
-            <Image
+            {/*<Image
               src="/aipic.png" 
               alt="Maxwell" 
               className="home-img w-48 sm:w-56 lg:w-64 xl:w-60 max-w-full h-70"
-            />
+            />*/}
+            <Image
+  src="/aipic.png" 
+  alt="Maxwell" 
+  width={256}  // Base size for lg:w-64 (64 * 4 = 256px)
+  height={280} // h-70 would be 280px (70 * 4 = 280px)
+  className="home-img w-48 sm:w-56 lg:w-64 xl:w-60 max-w-full h-70"
+/>
           </div>
         </div>
 

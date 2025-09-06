@@ -84,11 +84,15 @@ export default function AboutSection() {
           {/* Image Section */}
           <div className="relative">
             <div className="relative overflow-hidden rounded-2xl shadow-2xl transform hover:scale-105 transition-transform duration-500">
-              <Image 
+              <img 
                 src="/aipicbg.png" 
                 alt="Maxwell - Fullstack Developer" 
                 className="about-img w-full h-full object-cover rounded-2xl" 
               />
+               
+              <div className="relative w-full h-full">
+ 
+</div>
               <div className="absolute inset-0 bg-gradient-to-t from-gray-900/20 to-transparent"></div>
             </div>
             {/* Decorative elements */}

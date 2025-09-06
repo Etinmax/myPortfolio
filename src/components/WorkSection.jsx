@@ -10,7 +10,7 @@ export default function WorkSection({ setPortfolioItem }) {
   const portfolioItems = [
     {
       id: 1,
-      category: 'web',
+      category: 'Frontend',
       img: '/mockup/biz.png',
       title: 'Business Web Design',
       subtitle: 'Modern Corporate Website',
@@ -27,7 +27,7 @@ export default function WorkSection({ setPortfolioItem }) {
     },
     {
       id: 2,
-      category: 'app',
+      category: 'Frontend',
       img: '/mockup/storage.png',
       title: 'Cloud Storage App',
       subtitle: 'Web App Interface',
@@ -44,25 +44,25 @@ export default function WorkSection({ setPortfolioItem }) {
     },
     {
       id: 3,
-      category: 'design',
-      img: '/mockup/storage.png',
-      title: 'Travel App Brand',
-      subtitle: 'Logo & Brand Identity',
+      category: 'Fullstack App',
+      img: '/mockup/dreamspace.png',
+      title: 'Property Rental App Brand',
+      subtitle: 'Find Your Perfect Home',
       details: {
-        title: 'Logo Design Creativity & Application',
-        description: 'Three smartphone screens displaying a beautifully designed travel booking application interface',
+        title: 'Property Rental App',
+        description: 'Built a property rental application',
         info: [
           { label: 'Created', value: '10 Apr 2025' },
-          { label: 'Technologies', value: 'Adobe Creative Suite' },
-          { label: 'Role', value: 'Brand Designer' },
+          { label: 'Technologies', value: 'NextJS and ExpressJs' },
+          { label: 'Role', value: 'Full Stack Developer' },
           { label: 'View', value: 'www.domain.com', href: '#' },
         ],
       },
     },
     {
       id: 4,
-      category: 'app',
-      img: '/mockup/biz.png',
+      category: 'Backend',
+      img: '/mockup/task.png',
       title: 'Task Management App',
       subtitle: 'Task Tracking App',
       details: {
@@ -78,8 +78,8 @@ export default function WorkSection({ setPortfolioItem }) {
     },
     {
       id: 5,
-      category: 'web',
-      img: '/mockup/biz.png',
+      category: 'Frontend',
+      img: '/mockup/hotel.png',
       title: 'Hotel Management App',
       subtitle: 'Web Application',
       details: {
@@ -95,8 +95,8 @@ export default function WorkSection({ setPortfolioItem }) {
     },
     {
       id: 6,
-      category: 'design',
-      img: '/mockup/storage.png',
+      category: 'Fullstack',
+      img: '/mockup/attend.png',
       title: 'Students Attendance App',
       subtitle: 'Web App Design',
       details: {
@@ -105,6 +105,23 @@ export default function WorkSection({ setPortfolioItem }) {
         info: [
           { label: 'Created', value: '20 Mar 2025' },
           { label: 'Technologies', value: 'Nextjs, Expressjs' },
+          { label: 'Role', value: 'Full Stack Developer' },
+          { label: 'View', value: 'www.domain.com', href: '#' },
+        ],
+      },
+    },
+    {
+      id: 7,
+      category: 'Fullstack',
+      img: '/mockup/moonhealth.png',
+      title: 'Health Services App',
+      subtitle: 'Web App Design',
+      details: {
+        title: 'App for Technology & Services',
+        description: 'An app design that is clean and modern, making health services easy to access',
+        info: [
+          { label: 'Created', value: '20 September 2024' },
+          { label: 'Technologies', value: 'Wordpress' },
           { label: 'Role', value: 'Full Stack Developer' },
           { label: 'View', value: 'www.domain.com', href: '#' },
         ],
@@ -127,9 +144,9 @@ export default function WorkSection({ setPortfolioItem }) {
 
   const filters = [
     { key: 'all', label: 'All Projects' },
-    { key: 'web', label: 'Web Dev' },
-    { key: 'app', label: 'Technical' },
-    { key: 'design', label: 'Design' },
+    { key: 'Frontend', label: 'Frontend' },
+    { key: 'Backend', label: 'Backend' },
+    { key: 'Fullstack', label: 'Fullstack' },
   ];
 
   return (
@@ -262,165 +279,3 @@ export default function WorkSection({ setPortfolioItem }) {
     </section>
   );
 }
-
-{/*'use client';
-
-import { useEffect, useRef } from 'react';
-import dynamic from 'next/dynamic';
-
-// Dynamically import mixitup only on the client side
-const MixItUp = dynamic(() => import('mixitup'), { ssr: false });
-
-export default function WorkSection({ setPortfolioItem }) {
-  const mixerRef = useRef(null);
-  const mixerInstance = useRef(null);
-
-  useEffect(() => {
-    // Ensure mixitup is only initialized in the browser
-    if (typeof window !== 'undefined' && mixerRef.current) {
-      // Initialize mixitup and store the instance
-      mixerInstance.current = MixItUp(mixerRef.current, {
-        selectors: { target: '.work-card' },
-        animation: { duration: 300 },
-      });
-    }
-
-    // Cleanup on component unmount
-    return () => {
-      if (mixerInstance.current && typeof mixerInstance.current.destroy === 'function') {
-        mixerInstance.current.destroy();
-      }
-    };
-  }, []);
-
-  const handleFilterClick = (e) => {
-    document.querySelectorAll('.work-item').forEach((item) => item.classList.remove('active-work'));
-    e.target.classList.add('active-work');
-  };
-
-  const portfolioItems = [
-    {
-      category: 'web',
-      img: '/mockup/biz.png',
-      title: 'Web Design',
-      details: {
-        title: 'The services we provide for design',
-        description: 'Two smartphones displaying a sleek, dark-themed dashboard interface',
-        info: [
-          { label: 'Created', value: '22 Apr 2025' },
-          { label: 'Technologies', value: 'html css' },
-          { label: 'Role', value: 'frontend' },
-          { label: 'View', value: 'www.domain.com', href: '#' },
-        ],
-      },
-    },
-    {
-      category: 'app',
-      img: '/mockup/mobile.png',
-      title: 'App Design',
-      details: {
-        title: 'Mobile App Landing Design & App Maintain',
-        description: 'A stylish burger restaurant mobile app interface displayed on two smartphones',
-        info: [
-          { label: 'Created', value: '15 Apr 2025' },
-          { label: 'Technologies', value: 'html css' },
-          { label: 'Role', value: 'frontend' },
-          { label: 'View', value: 'www.domain.com', href: '#' },
-        ],
-      },
-    },
-    {
-      category: 'design',
-      img: '/mockup/storage.png',
-      title: 'Brand Design',
-      details: {
-        title: 'Logo Design Creativity & Application',
-        description: 'Three smartphone screens displaying a beautifully designed travel booking application interface',
-        info: [
-          { label: 'Created', value: '10 Apr 2025' },
-          { label: 'Technologies', value: 'html css' },
-          { label: 'Role', value: 'frontend' },
-          { label: 'View', value: 'www.domain.com', href: '#' },
-        ],
-      },
-    },
-    {
-      category: 'app',
-      img: '/mockup/biz.png',
-      title: 'App Design',
-      details: {
-        title: 'Mobile App Landing Design & Services',
-        description: 'Modern workout website interface design featuring a bold and energetic visual layout',
-        info: [
-          { label: 'Created', value: '4 Apr 2025' },
-          { label: 'Technologies', value: 'html css' },
-          { label: 'Role', value: 'frontend' },
-          { label: 'View', value: 'www.domain.com', href: '#' },
-        ],
-      },
-    },
-    {
-      category: 'web',
-      img: '/images/work-5.png',
-      title: 'Brand Design',
-      details: {
-        title: 'Design for Technology & Services',
-        description: 'An app design that is clean, functional, and ideal for gamers looking to manage their digital assets and purchases',
-        info: [
-          { label: 'Created', value: '28 Mar 2025' },
-          { label: 'Technologies', value: 'html css' },
-          { label: 'Role', value: 'frontend' },
-          { label: 'View', value: 'www.domain.com', href: '#' },
-        ],
-      },
-    },
-    {
-      category: 'design',
-      img: '/images/work-6.png',
-      title: 'Web Design',
-      details: {
-        title: 'App for Technology & Services',
-        description: 'An app design that is clean and modern, making food browsing and ordering easy',
-        info: [
-          { label: 'Created', value: '20 Mar 2025' },
-          { label: 'Technologies', value: 'html css' },
-          { label: 'Role', value: 'frontend' },
-          { label: 'View', value: 'www.domain.com', href: '#' },
-        ],
-      },
-    },
-  ];
-
-  return (
-    <section id="work" className="section">
-      <h2 className="section-title" data-heading="My Portfolio">Recent Works</h2>
-      <div className="work-filters flex justify-center gap-3 mb-8">
-        {['all', 'web', 'app', 'design'].map((filter) => (
-          <span
-            key={filter}
-            className={`work-item cursor-pointer px-3 py-1 rounded-lg ${filter === 'all' ? 'active-work bg-green-500 text-white' : 'text-gray-100'}`}
-            data-filter={filter === 'all' ? 'all' : `.${filter}`}
-            onClick={handleFilterClick}
-          >
-            {filter.charAt(0).toUpperCase() + filter.slice(1)}
-          </span>
-        ))}
-      </div>
-      <div className="work-container container mx-auto px-4  grid md:grid-cols-3 gap-6" ref={mixerRef}>
-        {portfolioItems.map((item, index) => (
-          <div key={index} className={`work-card ${item.category} bg-gray-800 p-5 rounded-lg`}>
-            <img src={item.img} alt="" className="work-img rounded-lg mb-4" />
-            <h3 className="work-title text-base font-medium mb-2">{item.title}</h3>
-            <span
-              className="work-button text-green-500 text-sm flex items-center gap-1 cursor-pointer"
-              onClick={() => setPortfolioItem(item)}
-            >
-              Demo <i className="uil uil-arrow-right work-button-icon"></i>
-            </span>
-            <div className="portfolio-item-details hidden">{JSON.stringify(item.details)}</div>
-          </div>
-        ))}
-      </div>
-    </section>
-  );
-}*/}
